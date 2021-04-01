@@ -5,13 +5,13 @@
     <title>Lukabit.com</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="main.js"></script>
+    <script src=".main.js"></script>
   </head>
   <body>
     <nav class="navbar">
       <img
         class="logo"
-        src="/img/Lukabit_SDmartTech_Logo-min.png"
+        src="./img/Lukabit_SDmartTech_Logo-min.png"
         alt="Lukabit SmartTech Logo"
       />
       <ul>
@@ -25,7 +25,7 @@
       <img
         class="hero"
         alt="imagen de la tierra desde el espacio"
-        src="/img/nasa-Q1p7bh3SHj8-unsplash-min.jpg"
+        src="./img/nasa-Q1p7bh3SHj8-unsplash-min.jpg"
       />
       <h1>
         Lukabit SmartTech <br />
@@ -38,7 +38,7 @@
         <hr />
         <article>
           <img
-            src="/img/alex-knight-2EJCSULRwC8-unsplash-min.jpg"
+            src="./img/alex-knight-2EJCSULRwC8-unsplash-min.jpg"
             alt="robot humanoide"
           />
           <p>
@@ -74,24 +74,24 @@
             sus necesidades
           </p>
           <img
-            src="/img/sebastian-scholz-nuki-Fh3Dtg6QX4Q-unsplash-min.jpg"
+            src="./img/sebastian-scholz-nuki-Fh3Dtg6QX4Q-unsplash-min.jpg"
             alt="un google home junto a una cerradura inteligente de nuki"
           />
           <div class="iotPhotos">
             <img
-              src="/img/bence-boros-anapPhJFRhM-unsplash-min.jpg"
+              src="./img/bence-boros-anapPhJFRhM-unsplash-min.jpg"
               alt="google home junto a un smartphone mmostrando la app home"
             />
             <img
-              src="/img/jorge-ramirez-MceA9kSze0U-unsplash-min.jpg"
+              src="./img/jorge-ramirez-MceA9kSze0U-unsplash-min.jpg"
               alt="una planta junto alicates y a un projecto iot con un controlador conectado a un breadboard con una pantalla mostrando la temperatura humedad de la planta"
             />
             <img
-              src="/img/leon-vbxyFxlgpjM-unsplash-min.jpg"
+              src="./img/leon-vbxyFxlgpjM-unsplash-min.jpg"
               alt="un equipo de cinco personas sentadas en una mesa observando un monitor en la pared rodeado the post-its"
             />
             <img
-              src="/img/patrick-campanale-Apoe84m_CHQ-unsplash-min.jpg"
+              src="./img/patrick-campanale-Apoe84m_CHQ-unsplash-min.jpg"
               alt="smartphone mostrando pantalla de configuracion de google home app"
             />
           </div>
@@ -102,10 +102,10 @@
         <hr />
         <article>
           <img
-            src="/img/miles-burke-idhx-MOCDSk-unsplash-min.jpg"
+            src="./img/miles-burke-idhx-MOCDSk-unsplash-min.jpg"
             alt="contact us con letras de scrable en fondo verde"
           />
-          <form action="contact.php">
+          <form action="email_service.php" method="post">
             <p>
               Estamos a tu entera disposición para cualquier consulta, solo
               rellena el formulario y nos pondremos en contacto lo antes
@@ -113,13 +113,13 @@
               <a href="mailto:contact@lukabit.com">contacto@lukabit.com</a>
             </p>
             <label for="name">Nombre:</label>
-            <input id="name" type="text" required />
+            <input id="name" type="text" name="name" required />
             <label for="phone">Teléfono:</label>
-            <input id="phone" type="tel" required />
+            <input id="phone" type="tel" name="phone" required />
             <label for="email">Email:</label>
-            <input id="email" type="email" required />
+            <input id="email" type="email" name="email" required />
             <label for="message">Mensaje:</label>
-            <textarea id="message" required></textarea>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
           </form>
         </article>
@@ -139,7 +139,7 @@
         </p>
       </div>
       <div>
-        <img src="/img/logo_ilerna-min.png" alt="logo Ilerna" />
+        <img src="./img/logo_ilerna-min.png" alt="logo Ilerna" />
       </div>
     </footer>
   </body>
